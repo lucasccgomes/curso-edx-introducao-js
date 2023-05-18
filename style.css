@@ -1,0 +1,71 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.functioncenter {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    max-width: 100%;
+}
+
+section {
+    border: 4px solid grey;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
+    float: left;
+    height: 360px;
+    padding: 20px;
+    margin: 10px;
+}
+
+#plotSettings {
+    width: 140px;
+
+}
+
+#plot {
+    max-width: 550px;
+    min-width: 120px;
+}
+
+@media only screen and (max-width: 882px) {
+    .function-plot {
+        max-width: 400px;
+        min-width: 120px;
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    .functioncenter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #styleinput{
+        display: flex;
+        max-width: 100%;
+    }
+
+    #plotSettings {
+        display: flex;
+        flex-direction: column;
+        width: 342px;
+        max-height:87px ;
+
+    }
+
+    #plotSettings input {
+        max-height: 20px;
+        max-width: 34px;
+    }
+
+    .function-plot {
+        max-width: 348px;
+        min-width: 120px;
+    }
+}
